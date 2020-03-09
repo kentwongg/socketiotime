@@ -1,0 +1,55 @@
+<!-- KENT WONG, 00318833, Tutorial B05 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <!-- font -->
+     <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>really cool app by Kent Wong</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+      <h1>Welcome to Dank Chat</h1>
+    <div class="container">
+      <div class="chat-container">
+        <div id="yourname"></div>
+        <div class="row">
+          <div class="col-9 col-s-9">     
+            <ul id="messages"></ul> 
+            <form action="">
+              <input id="m" autocomplete="off" /><button>Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-7 col-s-7">    
+        <div class="divider"></div>
+      </div>
+
+      <div class="userpool-container">
+        <h1 style="margin-left: 5px;">Users </h1>
+        <p>Use "/nick newname" to change user handle 
+        Use "/nickcolor RRGGBB" to change handle colour</p>
+        <ul style="list-style: none;" id="userpool"></ul>
+    </div>
+</div>
+
+   <!--JavaScript at end of body for optimized loading-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+  </body>
+</html>
